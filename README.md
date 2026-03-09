@@ -1,6 +1,6 @@
-## Macro Code
+## PYTHON SCRIPT GUI
 
-You can copy the entire macro code below and paste it into a new VBA module in your workbook:
+You can copy the entire script code below and paste it into a new VS code module:
 
 ```import math
 import pandas as pd
@@ -124,16 +124,17 @@ messagebox.showinfo(
     f"Saved to:\n{output_path}"
 )
 ```
-# Excel VBA Macros Collection
+#  Python GUI Systematic Sampler
 
-## Sheet Creation Macro
+## Overview
 
-This macro creates and arranges sheets in your workbook with the following steps:
+This tool is a Python-based replacement for your Excel macro that performs systematic sampling on large datasets (100k+ rows). It allows users to:
 
-- Rename the existing sheet named **Sheet1** to **REVIEW DATA**  
-- Add a new sheet named **ORIGINAL DATA** after **REVIEW DATA**  
-- Add a new sheet named **RAW DATA AND GFI** after **ORIGINAL DATA**  
-- Add a new sheet named **RETAILER INFORMATION** after **RAW DATA AND GFI**  
-- Select cell **K23** on the active sheet  
+- Select an input Excel or CSV file
+- Optionally choose a sheet
+- Enter RPG column (for compatibility)
+- Automatically generate a ≤ 800 row systematic sample
+- Target ideal sample size: 730 rows
+- Save the result as an Excel file
 
----
+It solves performance issues where Excel VBA macros freeze or crash on large files.
